@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="p:domain_verify" content="f32adf17ba04bc43b709cae3417f16ae"/>
+        <!--<link rel='icon' href='images/favicon.ico'>-->
+        <title>maisiewilkins.co.uk: fashion portfolio</title>
+        <link rel="stylesheet" type="text/css" href="Style/style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i|Raleway" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+   
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+            
+        /// Scroll fade in when 100px from the top 
+        $(window).scroll(function() {
+            if ($(this).scrollTop()> 700) {
+                $('header').fadeIn();
+            } else {
+                $('header').fadeOut();
+            }
+        });
+           
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>700){
+                $('titleFade').fadeOut();
+            } else {
+                $('titleFade').fadeIn();
+            }
+        });
+        
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <header class="scrolltop" id="scrolltop">
+                
+                <div class="head" id="header-nav">
+                    <ul id="nav-links">
+                        <li class="nav-item">
+                            <a href="#content">Top</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#float-about">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#float-education">Education</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id="header-logo">
+                        <img src="Media/Images/Maisielogos/Logo3.png">
+                </div>
+                
+                <div class="head" id="header-social">
+                    <ul id="social-links">
+                        <li class="social-item facebook-link">
+                            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        </li>
+                        
+                        <li class="social-item instagram-link">
+                            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        
+                        <li class="social-item twitter-link">
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            
+            <div id="content">
+                
+                <div class="img" id="content-splash" >
+                    <img id="splash-img" src="Media/Images/FadeShow/MaisieEditedLookbook15.jpg">
+                </div>
+                
+                
+                <section id="content-head">
+                    <div id="head-title">
+                        <titleFade>
+                            <a href="#content-float"><img src="Media/Images/Maisielogos/Logo2.png"></a>
+                        </titleFade>
+                    </div>
+                </section>
+            
+                <section id="content-float">
+                    
+                    <div class="image-float-three" id="float-gallery-1">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-2">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook1%201.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-3">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook18.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-4">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook2.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-5">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook23.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-6">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedlookbook25.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-7">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedlookbook28.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-8">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook29.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-9">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook32.jpg">
+                    </div>
+                    
+                    <div class="text-float-left" id="float-about">
+                        <h2>About</h2>
+                        
+                        
+                        <p>
+                            Maisie Wilkins is a womanswear designer with a strong interest in pattern cutting. She finds satisfaction in the process of creating a garment; finding the right fit and crafting something that complements and extends the human body. 
+                        </p>
+                        
+                        <p>
+                            Her methods are very hands on, often using garments to drape on the stand, distorting everyday silhouettes and allowing them to be seen with new eyes. She also enjoys working with basic shapes on the stand, by deconstructing and reconstructing them to create new silhouettes. 
+                        </p>
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-10">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook39.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-11">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook4.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-12">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook42.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-13">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook43.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-14">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook46.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-15">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook47.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-16">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook49.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-17">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook5.jpg">
+                    </div>
+                    
+                    <div class="image-float-three" id="float-gallery-18">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook51.jpg">
+                    </div>
+                    
+                    <div class="text-float-left" id="float-education">
+                        <h2>Education</h2>
+                        
+                        <p>
+                            - Art and Design UAL Art Foundation - City College Brighton and Hove - 2013-14 - Merit
+                            - Fashion BA(Hons)-  Kingston University- 2014 - 17
+                        </p>
+                    </div>
+                    
+                    <div class="image-float-right" id="float-gallery-19">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook53.jpg">
+                    </div>
+                    
+                    <div class="image-float-left" id="float-gallery-20">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook54.jpg">
+                    </div>
+                    
+                    <div class="image-float-right" id="float-gallery-21">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook7.jpg">
+                    </div>
+                    
+                    <div class="image-float-left" id="float-gallery-23">
+                            <img src="Media/Images/ModeledLooks/MaisieEditedLookbook8.jpg">
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
